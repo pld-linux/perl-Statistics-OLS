@@ -5,7 +5,7 @@ Summary:	Statistics::OLS perl module
 Summary(pl):	Modu³ perla Statistics::OLS
 Name:		perl-Statistics-OLS
 Version:	0.07
-Release:	5
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -32,13 +32,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf Changes README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc Changes README
 %{perl_sitelib}/Statistics/OLS.pm
 %{_mandir}/man3/*
