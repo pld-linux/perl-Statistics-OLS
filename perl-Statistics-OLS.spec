@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Statistics
-%define	pnam	OLS
+%define		pdir	Statistics
+%define		pnam	OLS
 Summary:	Statistics::OLS - perform ordinary least squares and associated statistics
 Summary(pl):	Statistics::OLS - metoda najmniejszych kwadratów i inne zwi±zane z ni± statystyki
 Name:		perl-Statistics-OLS
