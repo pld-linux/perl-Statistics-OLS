@@ -3,7 +3,7 @@ Summary:	Statistics-OLS perl module
 Summary(pl):	Modu³ perla Statistics-OLS
 Name:		perl-Statistics-OLS
 Version:	0.07
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
