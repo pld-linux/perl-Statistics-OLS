@@ -2,8 +2,8 @@
 Summary:	Statistics-OLS perl module
 Summary(pl):	Modu³ perla Statistics-OLS
 Name:		perl-Statistics-OLS
-Version:	0.04
-Release:	3
+Version:	0.06
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
@@ -34,7 +34,7 @@ rm -rf $RPM_BUILD_ROOT
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Statistics/OLS
   sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
+  mv -f .packlist.new .packlist
 )
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
