@@ -5,7 +5,7 @@ Summary:	Statistics::OLS - perform ordinary least squares and associated statist
 Summary(pl):	Statistics::OLS - metoda najmniejszych kwadratów i inne zwi±zane z ni± statystyki
 Name:		perl-Statistics-OLS
 Version:	0.07
-Release:	8
+Release:	9
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
