@@ -1,8 +1,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Statistics
 %define	pnam	OLS
-Summary:	Statistics::OLS perl module
-Summary(pl):	Modu³ perla Statistics::OLS
+Summary:	Statistics::OLS - perform ordinary least squares and associated statistics, v 0.07.
 Name:		perl-Statistics-OLS
 Version:	0.07
 Release:	6
@@ -15,10 +14,12 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Statistics::OLS perl module.
-
-%description -l pl
-Modu³ perla Statistics::OLS.
+I wrote B<Statistics::OLS> to perform Ordinary Least Squares (linear
+curve fitting) on two dimensional data: y = a + bx. The other simple
+statistical module I found on CPAN (Statistics::Descriptive) is designed
+for univariate analysis. It accomodates OLS, but somewhat inflexibly and
+without rich bivariate statistics. Nevertheless, it might make sense to
+fold OLS into that module or a supermodule someday.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
