@@ -5,12 +5,12 @@ Summary:	Statistics::OLS - perform ordinary least squares and associated statist
 Summary(pl):	Statistics::OLS - metoda najmniejszych kwadratów i inne zwi±zane z ni± statystyki
 Name:		perl-Statistics-OLS
 Version:	0.07
-Release:	8
+Release:	9
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -35,7 +35,8 @@ analizy dwóch zmiennych.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -49,5 +50,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitelib}/Statistics/OLS.pm
+%{perl_vendorlib}/Statistics/OLS.pm
 %{_mandir}/man3/*
