@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Statistics
 %define	pnam	OLS
-Summary:	Statistics-OLS perl module
-Summary(pl):	Modu³ perla Statistics-OLS
+Summary:	Statistics::OLS perl module
+Summary(pl):	Modu³ perla Statistics::OLS
 Name:		perl-Statistics-OLS
 Version:	0.07
 Release:	5
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Statistics-OLS perl module.
+Statistics::OLS perl module.
 
 %description -l pl
-Modu³ perla Statistics-OLS.
+Modu³ perla Statistics::OLS.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
