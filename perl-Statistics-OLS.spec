@@ -6,7 +6,7 @@
 %define		pdir	Statistics
 %define		pnam	OLS
 Summary:	Statistics::OLS - perform ordinary least squares and associated statistics
-Summary(pl):	Statistics::OLS - metoda najmniejszych kwadratÛw i inne zwi±zane z ni± statystyki
+Summary(pl.UTF-8):   Statistics::OLS - metoda najmniejszych kwadrat√≥w i inne zwiƒÖzane z niƒÖ statystyki
 Name:		perl-Statistics-OLS
 Version:	0.07
 Release:	10
@@ -29,13 +29,13 @@ inflexibly and without rich bivariate statistics. Nevertheless, it
 might make sense to fold OLS into that module or a supermodule
 someday.
 
-%description -l pl
-Modu≥ Statistics::OLS zosta≥ napisany, aby przeprowadzaÊ liniowe
-dopasowanie zwyk≥± metod± najmniejszych kwadratÛw na dwuwymiarowych
-danych (y = a + bx). Inny prosty modu≥, Statistics::Descriptive,
-s≥uøy do analizy jednej zmiennej. Uøywa on zwyk≥ej metody
-najmniejszych kwadratÛw, ale jest ma≥o elastyczny i pozbawiony bogatej
-analizy dwÛch zmiennych.
+%description -l pl.UTF-8
+Modu≈Ç Statistics::OLS zosta≈Ç napisany, aby przeprowadzaƒá liniowe
+dopasowanie zwyk≈ÇƒÖ metodƒÖ najmniejszych kwadrat√≥w na dwuwymiarowych
+danych (y = a + bx). Inny prosty modu≈Ç, Statistics::Descriptive,
+s≈Çu≈ºy do analizy jednej zmiennej. U≈ºywa on zwyk≈Çej metody
+najmniejszych kwadrat√≥w, ale jest ma≈Ço elastyczny i pozbawiony bogatej
+analizy dw√≥ch zmiennych.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
