@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Statistics
 %define		pnam	OLS
+%include	/usr/lib/rpm/macros.perl
 Summary:	Statistics::OLS - perform ordinary least squares and associated statistics
 Summary(pl.UTF-8):	Statistics::OLS - metoda najmniejszych kwadratów i inne związane z nią statystyki
 Name:		perl-Statistics-OLS
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	7bd135125aecdbf523c00714e381eeaa
+URL:		http://search.cpan.org/dist/Statistics-OLS/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -32,10 +33,10 @@ someday.
 %description -l pl.UTF-8
 Moduł Statistics::OLS został napisany, aby przeprowadzać liniowe
 dopasowanie zwykłą metodą najmniejszych kwadratów na dwuwymiarowych
-danych (y = a + bx). Inny prosty moduł, Statistics::Descriptive,
-służy do analizy jednej zmiennej. Używa on zwykłej metody
-najmniejszych kwadratów, ale jest mało elastyczny i pozbawiony bogatej
-analizy dwóch zmiennych.
+danych (y = a + bx). Inny prosty moduł, Statistics::Descriptive, służy
+do analizy jednej zmiennej. Używa on zwykłej metody najmniejszych
+kwadratów, ale jest mało elastyczny i pozbawiony bogatej analizy dwóch
+zmiennych.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
