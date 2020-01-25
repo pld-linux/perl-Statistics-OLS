@@ -4,7 +4,6 @@
 
 %define		pdir	Statistics
 %define		pnam	OLS
-%include	/usr/lib/rpm/macros.perl
 Summary:	Statistics::OLS - perform ordinary least squares and associated statistics
 Summary(pl.UTF-8):	Statistics::OLS - metoda najmniejszych kwadratów i inne związane z nią statystyki
 Name:		perl-Statistics-OLS
